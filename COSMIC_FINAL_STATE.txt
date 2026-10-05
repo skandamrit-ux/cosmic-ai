@@ -1,0 +1,988 @@
+===== COSMIC FINAL PROJECT SNAPSHOT =====
+Generated: Tue Sep 22 22:49:15 IST 2026
+Root: /public/Cosmic AI
+
+===== PYTHON =====
+Python 3.12.14
+
+===== INSTALLED PACKAGES =====
+Package            Version
+------------------ ---------
+blinker            1.9.0
+certifi            2026.7.22
+charset-normalizer 3.5.1
+click              8.5.0
+Flask              3.1.3
+flask-cors         6.0.5
+idna               3.20
+itsdangerous       2.2.0
+Jinja2             3.1.6
+MarkupSafe         3.0.3
+packaging          24.2
+pip                24.3.1
+pyparsing          3.1.4
+python-dotenv      1.2.3
+requests           2.34.2
+setuptools         70.3.0
+urllib3            2.8.0
+Werkzeug           3.1.8
+
+===== FOLDERS =====
+.
+./backend
+./backend/agents
+./backend/agents/coding
+./backend/agents/memory
+./backend/agents/orchestration
+./backend/agents/planning
+./backend/agents/reasoning
+./backend/agents/research
+./backend/agents/security
+./backend/agents/testing
+./backend/ai
+./backend/ai/gateway
+./backend/ai/models
+./backend/ai/prompts
+./backend/ai/providers
+./backend/ai/registry
+./backend/ai/router
+./backend/ai/streaming
+./backend/api
+./backend/api/dependencies
+./backend/api/middleware
+./backend/api/routes
+./backend/api/schemas
+./backend/api/websocket
+./backend/automation
+./backend/automation/background
+./backend/automation/events
+./backend/automation/rules
+./backend/automation/scheduler
+./backend/automation/triggers
+./backend/automation/workflows
+./backend/backup
+./backend/backup/integrity
+./backend/backup/manifests
+./backend/backup/restore
+./backend/backup/snapshots
+./backend/coding
+./backend/coding/code_analysis
+./backend/coding/debugging
+./backend/coding/generation
+./backend/coding/project_builder
+./backend/coding/refactoring
+./backend/coding/repository
+./backend/coding/sandbox
+./backend/coding/testing
+./backend/config
+./backend/config/environments
+./backend/config/profiles
+./backend/core
+./backend/core/context
+./backend/core/conversation
+./backend/core/events
+./backend/core/intelligence
+./backend/core/intent
+./backend/core/kernel
+./backend/core/lifecycle
+./backend/core/planning
+./backend/core/state
+./backend/database
+./backend/database/connection
+./backend/database/migrations
+./backend/database/models
+./backend/database/repositories
+./backend/database/seeds
+./backend/devices
+./backend/devices/android
+./backend/devices/arduino
+./backend/devices/esp32
+./backend/devices/iot
+./backend/devices/network
+./backend/devices/pc
+./backend/devices/protocols
+./backend/devices/registry
+./backend/identity
+./backend/identity/history
+./backend/identity/preferences
+./backend/identity/profiles
+./backend/memory
+./backend/memory/consolidation
+./backend/memory/embeddings
+./backend/memory/indexing
+./backend/memory/long_term
+./backend/memory/profiles
+./backend/memory/retrieval
+./backend/memory/short_term
+./backend/memory/storage
+./backend/observability
+./backend/observability/diagnostics
+./backend/observability/health
+./backend/observability/logging
+./backend/observability/metrics
+./backend/observability/tracing
+./backend/plugins
+./backend/plugins/installed
+./backend/plugins/loader
+./backend/plugins/manifest
+./backend/plugins/registry
+./backend/plugins/sandbox
+./backend/research
+./backend/research/analysis
+./backend/research/citation
+./backend/research/datasets
+./backend/research/extraction
+./backend/research/papers
+./backend/research/reports
+./backend/research/search
+./backend/research/sources
+./backend/runtime
+./backend/runtime/locks
+./backend/runtime/queues
+./backend/runtime/state
+./backend/runtime/temp
+./backend/security
+./backend/security/audit
+./backend/security/authentication
+./backend/security/authorization
+./backend/security/defensive_security
+./backend/security/permissions
+./backend/security/policies
+./backend/security/rate_limit
+./backend/security/roles
+./backend/security/secrets
+./backend/security/verification
+./backend/sync
+./backend/sync/cloud
+./backend/sync/conflicts
+./backend/sync/devices
+./backend/sync/state
+./backend/tools
+./backend/tools/browser
+./backend/tools/computer
+./backend/tools/execution
+./backend/tools/files
+./backend/tools/network
+./backend/tools/processes
+./backend/tools/registry
+./backend/tools/shell
+./backend/tools/system
+./backend/tools/validation
+./data
+./data/cache
+./data/datasets
+./data/exports
+./data/imports
+./data/indexes
+./data/local
+./data/models
+./data/research
+./docs
+./docs/api
+./docs/architecture
+./docs/automation
+./docs/coding
+./docs/decisions
+./docs/deployment
+./docs/development
+./docs/devices
+./docs/guides
+./docs/research
+./docs/security
+./docs/troubleshooting
+./frontend
+./frontend/animations
+./frontend/assets
+./frontend/chat
+./frontend/components
+./frontend/css
+./frontend/desktop
+./frontend/hud
+./frontend/js
+./frontend/layout
+./frontend/mobile
+./frontend/notifications
+./frontend/settings
+./frontend/three
+./frontend/visualization
+./frontend/voice
+./legacy
+./legacy/mark_liv
+./runtime
+./runtime/cache
+./runtime/locks
+./runtime/logs
+./runtime/queues
+./runtime/sessions
+./runtime/state
+./runtime/temporary
+./scripts
+./scripts/backup
+./scripts/development
+./scripts/diagnostics
+./scripts/maintenance
+./scripts/migration
+./scripts/release
+./scripts/setup
+./scripts/testing
+./tests
+./tests/api
+./tests/devices
+./tests/e2e
+./tests/fixtures
+./tests/integration
+./tests/mobile
+./tests/mocks
+./tests/performance
+./tests/regression
+./tests/security
+./tests/unit
+
+===== FILES / SIZE =====
+
+===== FILE HASHES =====
+1f4a6a700959c1adda133c62d7031434e51052c2098107364d991a27cdf34fd4  ./LICENSE
+2e1741a14f73dde572af86a0e42f8a39b6c10cd98e75ff775c32dc36d5bd84d7  ./frontend/index.html
+349e7cf8ea425cdd6bee96b5ed10d1001dccb56f3d46fc54efa154f1f5ac9f9b  ./COSMIC_PROJECT_STATE.md
+4a16cf33f9ffa766cfc8e8e5f85d1a45fb4a603f38e3907adf6d0d0b6e01adcd  ./backend/identity/identity_history.py
+510218abb85fee28863a78f43cc4039428a668b6327151ac8abc3d5c39635cea  ./COSMIC_PROJECT_SNAPSHOT.txt
+5180a6a177bc83821baa50d38c07386307bbfd11160f061a709251f78b243064  ./backend/database/connection.py
+63a2ffb693e5c0a96b6153c18064d49ba136187ca2a8e501438c94ddf40cfe93  ./.env.example
+6abc1a58b34cf17a45a17ab51d91d8f578f3314c8b2a4e4b25355140f514f06b  ./backend/core/kernel/kernel.py
+6b6cdfc8495c35b3acc3684c39d41385495bcf3e4d8214aeb34eb6c25b40d077  ./backend/identity/preferences.py
+728be5e0b588c74a7bc47d8b88cef7797756ac26a06004bca3f04b88f8c4c32e  ./backend/identity/identity_manager.py
+7801bbedf808a8e91ccfd89d919398ddfe63c2abe844f20679934ec76979bb25  ./docs/decisions/0001-foundation.md
+7b23f042c017f9b40bafc9a8e29e0616c035bc472affc47bc37e86bb709e62f9  ./backend/security/verification/__init__.py
+8232b92904c01c79394aa4eece67b4c5a445aabb87e2eb68d37412ac6f5b86ca  ./requirements.txt
+86613a282d51b94e897f5256aac2a8cce268a686ac29d29bf8c93747e68bb8de  ./frontend/js/app.js
+881b66de1c0a7369f9c0e3c39c367be06753b0510fd760cacb0cc0b9e0333326  ./README.md
+88a42ec0ea4791ba889a6de99d7c54a0ae93d1c4bd32a2a073dc5868af3ae0dd  ./backend/core/kernel/__init__.py
+95454ff470238e9525c731d067a9b6278ee8e590069113dcf725f16438d79225  ./backend/security/verification/verifier.py
+970ef0596db6b9020c1f98e32ef102c922bca61bb27f0df15f531560f6d303e1  ./.gitignore
+97bbe2a600616a39384baf6ab2d48fd8af2bb7673bb846b1fe9c79cc4df09155  ./COSMIC_FINAL_STATE.txt
+97eb325d45954a1b8054c98f8571a74bcb01b36f097e4ee356a2af643286464f  ./docs/architecture/README.md
+9f0e2ae089aa2b5cc2626027681e94cb43b596b51ccac642f5b8fc49a7c4436a  ./docs/security/README.md
+a86af757e1b580421b83239521dfc7a3de3ee26d3f3b377d127048db7e090c5b  ./backend/app.py
+b6791740b0814d182c452ac2b4fc1c98b4b332f38883fa7fe8531c6558d68a1e  ./backend/__init__.py
+d1c189e55903a877b8c78364a45d9bf3973a8d04eaeb1ffd380ecf36c26369df  ./scripts/development/run_backend.sh
+dc9c273ddff97c4dd5e67130bb27c3bcef6590d241efaf7fd5c3ab54f523fe2d  ./frontend/css/app.css
+e2442ffffa9224979cde493fa7cebd708d9cfd01b96ccd847abb56fa264fecf2  ./tests/api/test_health.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/agents/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/agents/coding/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/agents/memory/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/agents/orchestration/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/agents/planning/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/agents/reasoning/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/agents/research/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/agents/security/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/agents/testing/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/ai/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/ai/gateway/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/ai/models/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/ai/prompts/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/ai/providers/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/ai/registry/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/ai/router/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/ai/streaming/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/api/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/api/dependencies/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/api/middleware/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/api/routes/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/api/schemas/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/api/websocket/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/automation/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/automation/background/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/automation/events/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/automation/rules/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/automation/scheduler/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/automation/triggers/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/automation/workflows/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/backup/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/backup/integrity/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/backup/manifests/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/backup/restore/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/backup/snapshots/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/coding/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/coding/code_analysis/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/coding/debugging/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/coding/generation/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/coding/project_builder/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/coding/refactoring/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/coding/repository/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/coding/sandbox/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/coding/testing/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/config.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/config/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/config/environments/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/config/profiles/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/core/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/core/context/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/core/conversation/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/core/events/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/core/intelligence/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/core/intent/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/core/lifecycle/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/core/planning/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/core/state/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/database/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/database/connection/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/database/migrations/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/database/models/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/database/repositories/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/database/seeds/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/devices/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/devices/android/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/devices/arduino/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/devices/esp32/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/devices/iot/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/devices/network/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/devices/pc/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/devices/protocols/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/devices/registry/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/identity/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/identity/history/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/identity/preferences/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/identity/profiles/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/memory/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/memory/consolidation/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/memory/embeddings/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/memory/indexing/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/memory/long_term/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/memory/profiles/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/memory/retrieval/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/memory/short_term/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/memory/storage/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/observability/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/observability/diagnostics/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/observability/health/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/observability/logging/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/observability/metrics/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/observability/tracing/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/plugins/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/plugins/installed/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/plugins/loader/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/plugins/manifest/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/plugins/registry/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/plugins/sandbox/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/research/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/research/analysis/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/research/citation/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/research/datasets/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/research/extraction/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/research/papers/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/research/reports/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/research/search/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/research/sources/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/runtime/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/runtime/locks/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/runtime/queues/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/runtime/state/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/runtime/temp/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/security/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/security/audit/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/security/authentication/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/security/authorization/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/security/defensive_security/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/security/permissions/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/security/policies/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/security/rate_limit/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/security/roles/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/security/secrets/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/sync/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/sync/cloud/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/sync/conflicts/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/sync/devices/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/sync/state/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/tools/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/tools/browser/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/tools/computer/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/tools/execution/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/tools/files/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/tools/network/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/tools/processes/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/tools/registry/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/tools/shell/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/tools/system/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./backend/tools/validation/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./data/cache/.gitkeep
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./data/exports/.gitkeep
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./data/local/.gitkeep
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./data/research/.gitkeep
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./frontend/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./frontend/animations/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./frontend/assets/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./frontend/chat/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./frontend/components/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./frontend/css/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./frontend/desktop/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./frontend/hud/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./frontend/js/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./frontend/layout/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./frontend/mobile/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./frontend/notifications/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./frontend/settings/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./frontend/three/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./frontend/visualization/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./frontend/voice/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./legacy/mark_liv/.gitkeep
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./pyproject.toml
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./runtime/logs/.gitkeep
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./runtime/state/.gitkeep
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./runtime/temporary/.gitkeep
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./scripts/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./scripts/backup/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./scripts/development/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./scripts/maintenance/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./scripts/setup/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./scripts/testing/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./tests/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./tests/api/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./tests/devices/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./tests/e2e/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./tests/fixtures/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./tests/integration/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./tests/mobile/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./tests/mocks/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./tests/performance/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./tests/regression/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./tests/security/__init__.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./tests/unit/__init__.py
+
+===== IMPORTANT PROJECT FILES =====
+
+----- FILE: README.md -----
+# COSMIC AI
+
+COSMIC is a modular personal AI operating system designed as a device-independent AI core with mobile, computer, research, coding, automation, security, and future hardware interfaces.
+
+## Architecture
+
+User Interface → API → Kernel → Context/Memory/Identity → AI Gateway → Planner/Agents → Security/Permissions → Tools → Verification → State/Memory/Audit → Response
+
+## Core Principles
+
+- Real execution only; never simulate success.
+- Every important action is permission-aware and auditable.
+- Verification follows execution.
+- AI providers remain replaceable.
+- Android is a client/node, not the permanent brain.
+- Local-first architecture.
+- Cloud storage is optional backup/archive/synchronization.
+- Authorized defensive cybersecurity only.
+- Modular components with clear boundaries.
+
+----- FILE: COSMIC_PROJECT_STATE.md -----
+# COSMIC PROJECT STATE
+
+## Project
+COSMIC AI — Personal AI Operating System
+
+## Current Phase
+Foundation / Architecture Bootstrap
+
+## Primary Interface
+Android/mobile
+
+## Development Environment
+Acode + built-in terminal
+
+## Architecture Goal
+Device-independent backend/core with modular Android, PC, browser, research, coding, automation, security and hardware nodes.
+
+## Core Execution Pipeline
+Natural Language
+→ Intent + Context + Memory
+→ Planning
+→ AI/Capability Selection
+→ Permission + Authentication
+→ Execution
+→ Real Result
+→ Verification
+→ State/Memory Update
+→ Audit
+→ Verified Response
+
+## Security
+Only authorized defensive security, research, testing, CTF/lab and owned systems.
+
+## Important Rule
+COSMIC must never report an action as successful unless a real execution result has been obtained and verified.
+
+----- FILE: requirements.txt -----
+Flask>=3.1,<4
+python-dotenv>=1.0,<2
+
+----- FILE: pyproject.toml -----
+
+----- FILE: .env.example -----
+COSMIC_ENV=development
+COSMIC_HOST=127.0.0.1
+COSMIC_PORT=8000
+COSMIC_LOG_LEVEL=INFO
+COSMIC_DATABASE_URL=sqlite:///data/local/cosmic.db
+
+# AI provider secrets belong in .env only.
+# Never commit real API keys.
+AI_PROVIDER=
+AI_API_KEY=
+
+----- FILE: backend/app.py -----
+from flask import Flask, jsonify, request
+
+APP_NAME = "COSMIC AI"
+APP_VERSION = "0.1.0"
+
+app = Flask(__name__)
+
+
+@app.get("/")
+def root():
+    return jsonify({
+        "name": APP_NAME,
+        "version": APP_VERSION,
+        "status": "running"
+    })
+
+
+@app.get("/api/health")
+def health():
+    return jsonify({
+        "success": True,
+        "service": APP_NAME,
+        "status": "healthy"
+    })
+
+
+@app.post("/api/chat")
+def chat():
+    data = request.get_json(silent=True) or {}
+    message = str(data.get("message", "")).strip()
+
+    if not message:
+        return jsonify({
+            "success": False,
+            "error": "message is required"
+        }), 400
+
+    return jsonify({
+        "success": True,
+        "type": "response",
+        "message": message,
+        "verified": True
+    })
+
+
+if __name__ == "__main__":
+    app.run(host="127.0.0.1", port=8000, debug=False)
+
+----- FILE: backend/config.py -----
+
+----- FILE: backend/core/kernel/kernel.py -----
+"""COSMIC central kernel boundary."""
+
+class CosmicKernel:
+    def __init__(self):
+        self.initialized = False
+
+    def initialize(self):
+        self.initialized = True
+
+    def status(self):
+        return {
+            "initialized": self.initialized
+        }
+
+----- FILE: backend/identity/identity_manager.py -----
+"""Persistent COSMIC identity management."""
+
+DEFAULT_IDENTITY = {
+    "name": "COSMIC",
+    "version": "0.1.0"
+}
+
+
+class IdentityManager:
+    def __init__(self, identity=None):
+        self.identity = dict(DEFAULT_IDENTITY)
+        if identity:
+            self.identity.update(identity)
+
+    def get_name(self):
+        return self.identity["name"]
+
+    def rename(self, new_name):
+        new_name = str(new_name).strip()
+        if not new_name:
+            raise ValueError("Identity name cannot be empty")
+        self.identity["name"] = new_name
+        return new_name
+
+----- FILE: backend/identity/identity_history.py -----
+"""Identity change history."""
+
+class IdentityHistory:
+    def __init__(self):
+        self.entries = []
+
+    def record(self, old_name, new_name):
+        self.entries.append({
+            "old_name": old_name,
+            "new_name": new_name
+        })
+
+    def all(self):
+        return list(self.entries)
+
+----- FILE: backend/database/connection.py -----
+"""Database connection boundary.
+
+The database implementation can evolve without changing higher-level COSMIC modules.
+"""
+
+from pathlib import Path
+import sqlite3
+
+DEFAULT_DB = Path("data/local/cosmic.db")
+
+
+def connect(path=DEFAULT_DB):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    return sqlite3.connect(path)
+
+----- FILE: backend/security/verification/verifier.py -----
+"""Execution verification boundary."""
+
+class VerificationResult:
+    def __init__(self, verified, details=None):
+        self.verified = bool(verified)
+        self.details = details or {}
+
+    def to_dict(self):
+        return {
+            "verified": self.verified,
+            "details": self.details
+        }
+
+----- FILE: frontend/index.html -----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050814">
+    <title>COSMIC AI</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <main id="app">
+        <section class="cosmic-shell">
+            <div class="core">COSMIC</div>
+            <div id="status">SYSTEM INITIALIZING</div>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
+----- FILE: frontend/js/app.js -----
+async function checkCOSMIC() {
+    const status = document.getElementById("status");
+
+    try {
+        const response = await fetch("/api/health");
+        const data = await response.json();
+
+        status.textContent = data.success
+            ? "SYSTEM ONLINE"
+            : "SYSTEM ERROR";
+    } catch {
+        status.textContent = "BACKEND OFFLINE";
+    }
+}
+
+checkCOSMIC();
+
+----- FILE: frontend/css/app.css -----
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #050814;
+    color: #e8f0ff;
+    font-family: system-ui, sans-serif;
+}
+
+.cosmic-shell {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.core {
+    font-size: clamp(2rem, 12vw, 6rem);
+    font-weight: 800;
+    letter-spacing: .25em;
+}
+
+#status {
+    margin-top: 1rem;
+    opacity: .7;
+}
+
+----- FILE: scripts/development/run_backend.sh -----
+#!/bin/sh
+cd "$(dirname "$0")/../.." || exit 1
+python backend/app.py
+
+===== ALL PYTHON SOURCE =====
+
+----- FILE: backend/app.py -----
+from flask import Flask, jsonify, request
+
+APP_NAME = "COSMIC AI"
+APP_VERSION = "0.1.0"
+
+app = Flask(__name__)
+
+
+@app.get("/")
+def root():
+    return jsonify({
+        "name": APP_NAME,
+        "version": APP_VERSION,
+        "status": "running"
+    })
+
+
+@app.get("/api/health")
+def health():
+    return jsonify({
+        "success": True,
+        "service": APP_NAME,
+        "status": "healthy"
+    })
+
+
+@app.post("/api/chat")
+def chat():
+    data = request.get_json(silent=True) or {}
+    message = str(data.get("message", "")).strip()
+
+    if not message:
+        return jsonify({
+            "success": False,
+            "error": "message is required"
+        }), 400
+
+    return jsonify({
+        "success": True,
+        "type": "response",
+        "message": message,
+        "verified": True
+    })
+
+
+if __name__ == "__main__":
+    app.run(host="127.0.0.1", port=8000, debug=False)
+
+----- FILE: backend/config.py -----
+
+----- FILE: backend/core/kernel/kernel.py -----
+"""COSMIC central kernel boundary."""
+
+class CosmicKernel:
+    def __init__(self):
+        self.initialized = False
+
+    def initialize(self):
+        self.initialized = True
+
+    def status(self):
+        return {
+            "initialized": self.initialized
+        }
+
+----- FILE: backend/database/connection.py -----
+"""Database connection boundary.
+
+The database implementation can evolve without changing higher-level COSMIC modules.
+"""
+
+from pathlib import Path
+import sqlite3
+
+DEFAULT_DB = Path("data/local/cosmic.db")
+
+
+def connect(path=DEFAULT_DB):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    return sqlite3.connect(path)
+
+----- FILE: backend/identity/identity_history.py -----
+"""Identity change history."""
+
+class IdentityHistory:
+    def __init__(self):
+        self.entries = []
+
+    def record(self, old_name, new_name):
+        self.entries.append({
+            "old_name": old_name,
+            "new_name": new_name
+        })
+
+    def all(self):
+        return list(self.entries)
+
+----- FILE: backend/identity/identity_manager.py -----
+"""Persistent COSMIC identity management."""
+
+DEFAULT_IDENTITY = {
+    "name": "COSMIC",
+    "version": "0.1.0"
+}
+
+
+class IdentityManager:
+    def __init__(self, identity=None):
+        self.identity = dict(DEFAULT_IDENTITY)
+        if identity:
+            self.identity.update(identity)
+
+    def get_name(self):
+        return self.identity["name"]
+
+    def rename(self, new_name):
+        new_name = str(new_name).strip()
+        if not new_name:
+            raise ValueError("Identity name cannot be empty")
+        self.identity["name"] = new_name
+        return new_name
+
+----- FILE: backend/identity/preferences.py -----
+"""User preference abstraction."""
+
+class Preferences:
+    def __init__(self):
+        self._values = {}
+
+    def get(self, key, default=None):
+        return self._values.get(key, default)
+
+    def set(self, key, value):
+        self._values[key] = value
+
+----- FILE: backend/security/verification/verifier.py -----
+"""Execution verification boundary."""
+
+class VerificationResult:
+    def __init__(self, verified, details=None):
+        self.verified = bool(verified)
+        self.details = details or {}
+
+    def to_dict(self):
+        return {
+            "verified": self.verified,
+            "details": self.details
+        }
+
+----- FILE: tests/api/test_health.py -----
+def test_health_contract():
+    from backend.app import app
+
+    client = app.test_client()
+    response = client.get("/api/health")
+
+    assert response.status_code == 200
+    data = response.get_json()
+    assert data["success"] is True
+    assert data["status"] == "healthy"
+
+===== SHELL / WEB SOURCE =====
+
+----- FILE: ./frontend/css/app.css -----
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #050814;
+    color: #e8f0ff;
+    font-family: system-ui, sans-serif;
+}
+
+.cosmic-shell {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.core {
+    font-size: clamp(2rem, 12vw, 6rem);
+    font-weight: 800;
+    letter-spacing: .25em;
+}
+
+#status {
+    margin-top: 1rem;
+    opacity: .7;
+}
+
+----- FILE: ./frontend/index.html -----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050814">
+    <title>COSMIC AI</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <main id="app">
+        <section class="cosmic-shell">
+            <div class="core">COSMIC</div>
+            <div id="status">SYSTEM INITIALIZING</div>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
+----- FILE: ./frontend/js/app.js -----
+async function checkCOSMIC() {
+    const status = document.getElementById("status");
+
+    try {
+        const response = await fetch("/api/health");
+        const data = await response.json();
+
+        status.textContent = data.success
+            ? "SYSTEM ONLINE"
+            : "SYSTEM ERROR";
+    } catch {
+        status.textContent = "BACKEND OFFLINE";
+    }
+}
+
+checkCOSMIC();
+
+----- FILE: ./scripts/development/run_backend.sh -----
+#!/bin/sh
+cd "$(dirname "$0")/../.." || exit 1
+python backend/app.py
+
+===== PYTHON COMPILE CHECK =====
+
+===== GIT STATUS =====
+
+===== END COSMIC SNAPSHOT =====

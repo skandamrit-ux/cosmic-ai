@@ -1,0 +1,1694 @@
+============================================================
+COSMIC PROJECT SNAPSHOT
+Generated: Mon Sep 21 20:09:25 IST 2026
+Project: /public/Cosmic AI
+============================================================
+
+==================== FOLDER STRUCTURE ======================
+.
+./backend
+./backend/agents
+./backend/agents/coding
+./backend/agents/memory
+./backend/agents/orchestration
+./backend/agents/planning
+./backend/agents/reasoning
+./backend/agents/research
+./backend/agents/security
+./backend/agents/testing
+./backend/ai
+./backend/ai/gateway
+./backend/ai/models
+./backend/ai/prompts
+./backend/ai/providers
+./backend/ai/registry
+./backend/ai/router
+./backend/ai/streaming
+./backend/api
+./backend/api/dependencies
+./backend/api/middleware
+./backend/api/routes
+./backend/api/schemas
+./backend/api/websocket
+./backend/automation
+./backend/automation/background
+./backend/automation/events
+./backend/automation/rules
+./backend/automation/scheduler
+./backend/automation/triggers
+./backend/automation/workflows
+./backend/backup
+./backend/backup/integrity
+./backend/backup/manifests
+./backend/backup/restore
+./backend/backup/snapshots
+./backend/coding
+./backend/coding/code_analysis
+./backend/coding/debugging
+./backend/coding/generation
+./backend/coding/project_builder
+./backend/coding/refactoring
+./backend/coding/repository
+./backend/coding/sandbox
+./backend/coding/testing
+./backend/config
+./backend/config/environments
+./backend/config/profiles
+./backend/core
+./backend/core/context
+./backend/core/conversation
+./backend/core/events
+./backend/core/intelligence
+./backend/core/intent
+./backend/core/kernel
+./backend/core/lifecycle
+./backend/core/planning
+./backend/core/state
+./backend/database
+./backend/database/connection
+./backend/database/migrations
+./backend/database/models
+./backend/database/repositories
+./backend/database/seeds
+./backend/devices
+./backend/devices/android
+./backend/devices/arduino
+./backend/devices/esp32
+./backend/devices/iot
+./backend/devices/network
+./backend/devices/pc
+./backend/devices/protocols
+./backend/devices/registry
+./backend/identity
+./backend/identity/history
+./backend/identity/preferences
+./backend/identity/profiles
+./backend/memory
+./backend/memory/consolidation
+./backend/memory/embeddings
+./backend/memory/indexing
+./backend/memory/long_term
+./backend/memory/profiles
+./backend/memory/retrieval
+./backend/memory/short_term
+./backend/memory/storage
+./backend/observability
+./backend/observability/diagnostics
+./backend/observability/health
+./backend/observability/logging
+./backend/observability/metrics
+./backend/observability/tracing
+./backend/plugins
+./backend/plugins/installed
+./backend/plugins/loader
+./backend/plugins/manifest
+./backend/plugins/registry
+./backend/plugins/sandbox
+./backend/research
+./backend/research/analysis
+./backend/research/citation
+./backend/research/datasets
+./backend/research/extraction
+./backend/research/papers
+./backend/research/reports
+./backend/research/search
+./backend/research/sources
+./backend/runtime
+./backend/runtime/locks
+./backend/runtime/queues
+./backend/runtime/state
+./backend/runtime/temp
+./backend/security
+./backend/security/audit
+./backend/security/authentication
+./backend/security/authorization
+./backend/security/defensive_security
+./backend/security/permissions
+./backend/security/policies
+./backend/security/rate_limit
+./backend/security/roles
+./backend/security/secrets
+./backend/security/verification
+./backend/sync
+./backend/sync/cloud
+./backend/sync/conflicts
+./backend/sync/devices
+./backend/sync/state
+./backend/tools
+./backend/tools/browser
+./backend/tools/computer
+./backend/tools/execution
+./backend/tools/files
+./backend/tools/network
+./backend/tools/processes
+./backend/tools/registry
+./backend/tools/shell
+./backend/tools/system
+./backend/tools/validation
+./data
+./data/cache
+./data/datasets
+./data/exports
+./data/imports
+./data/indexes
+./data/local
+./data/models
+./data/research
+./docs
+./docs/api
+./docs/architecture
+./docs/automation
+./docs/coding
+./docs/decisions
+./docs/deployment
+./docs/development
+./docs/devices
+./docs/guides
+./docs/research
+./docs/security
+./docs/troubleshooting
+./frontend
+./frontend/animations
+./frontend/assets
+./frontend/chat
+./frontend/components
+./frontend/css
+./frontend/desktop
+./frontend/hud
+./frontend/js
+./frontend/layout
+./frontend/mobile
+./frontend/notifications
+./frontend/settings
+./frontend/three
+./frontend/visualization
+./frontend/voice
+./legacy
+./legacy/mark_liv
+./runtime
+./runtime/cache
+./runtime/locks
+./runtime/logs
+./runtime/queues
+./runtime/sessions
+./runtime/state
+./runtime/temporary
+./scripts
+./scripts/backup
+./scripts/development
+./scripts/diagnostics
+./scripts/maintenance
+./scripts/migration
+./scripts/release
+./scripts/setup
+./scripts/testing
+./tests
+./tests/api
+./tests/devices
+./tests/e2e
+./tests/fixtures
+./tests/integration
+./tests/mobile
+./tests/mocks
+./tests/performance
+./tests/regression
+./tests/security
+./tests/unit
+
+====================== FILE LIST ===========================
+./.env.example
+./.gitignore
+./COSMIC_PROJECT_STATE.md
+./LICENSE
+./README.md
+./backend/__init__.py
+./backend/agents/__init__.py
+./backend/agents/coding/__init__.py
+./backend/agents/memory/__init__.py
+./backend/agents/orchestration/__init__.py
+./backend/agents/planning/__init__.py
+./backend/agents/reasoning/__init__.py
+./backend/agents/research/__init__.py
+./backend/agents/security/__init__.py
+./backend/agents/testing/__init__.py
+./backend/ai/__init__.py
+./backend/ai/gateway/__init__.py
+./backend/ai/models/__init__.py
+./backend/ai/prompts/__init__.py
+./backend/ai/providers/__init__.py
+./backend/ai/registry/__init__.py
+./backend/ai/router/__init__.py
+./backend/ai/streaming/__init__.py
+./backend/api/__init__.py
+./backend/api/dependencies/__init__.py
+./backend/api/middleware/__init__.py
+./backend/api/routes/__init__.py
+./backend/api/schemas/__init__.py
+./backend/api/websocket/__init__.py
+./backend/app.py
+./backend/automation/__init__.py
+./backend/automation/background/__init__.py
+./backend/automation/events/__init__.py
+./backend/automation/rules/__init__.py
+./backend/automation/scheduler/__init__.py
+./backend/automation/triggers/__init__.py
+./backend/automation/workflows/__init__.py
+./backend/backup/__init__.py
+./backend/backup/integrity/__init__.py
+./backend/backup/manifests/__init__.py
+./backend/backup/restore/__init__.py
+./backend/backup/snapshots/__init__.py
+./backend/coding/__init__.py
+./backend/coding/code_analysis/__init__.py
+./backend/coding/debugging/__init__.py
+./backend/coding/generation/__init__.py
+./backend/coding/project_builder/__init__.py
+./backend/coding/refactoring/__init__.py
+./backend/coding/repository/__init__.py
+./backend/coding/sandbox/__init__.py
+./backend/coding/testing/__init__.py
+./backend/config.py
+./backend/config/__init__.py
+./backend/config/environments/__init__.py
+./backend/config/profiles/__init__.py
+./backend/core/__init__.py
+./backend/core/context/__init__.py
+./backend/core/conversation/__init__.py
+./backend/core/events/__init__.py
+./backend/core/intelligence/__init__.py
+./backend/core/intent/__init__.py
+./backend/core/kernel/__init__.py
+./backend/core/kernel/kernel.py
+./backend/core/lifecycle/__init__.py
+./backend/core/planning/__init__.py
+./backend/core/state/__init__.py
+./backend/database/__init__.py
+./backend/database/connection.py
+./backend/database/connection/__init__.py
+./backend/database/migrations/__init__.py
+./backend/database/models/__init__.py
+./backend/database/repositories/__init__.py
+./backend/database/seeds/__init__.py
+./backend/devices/__init__.py
+./backend/devices/android/__init__.py
+./backend/devices/arduino/__init__.py
+./backend/devices/esp32/__init__.py
+./backend/devices/iot/__init__.py
+./backend/devices/network/__init__.py
+./backend/devices/pc/__init__.py
+./backend/devices/protocols/__init__.py
+./backend/devices/registry/__init__.py
+./backend/identity/__init__.py
+./backend/identity/history/__init__.py
+./backend/identity/identity_history.py
+./backend/identity/identity_manager.py
+./backend/identity/preferences.py
+./backend/identity/preferences/__init__.py
+./backend/identity/profiles/__init__.py
+./backend/memory/__init__.py
+./backend/memory/consolidation/__init__.py
+./backend/memory/embeddings/__init__.py
+./backend/memory/indexing/__init__.py
+./backend/memory/long_term/__init__.py
+./backend/memory/profiles/__init__.py
+./backend/memory/retrieval/__init__.py
+./backend/memory/short_term/__init__.py
+./backend/memory/storage/__init__.py
+./backend/observability/__init__.py
+./backend/observability/diagnostics/__init__.py
+./backend/observability/health/__init__.py
+./backend/observability/logging/__init__.py
+./backend/observability/metrics/__init__.py
+./backend/observability/tracing/__init__.py
+./backend/plugins/__init__.py
+./backend/plugins/installed/__init__.py
+./backend/plugins/loader/__init__.py
+./backend/plugins/manifest/__init__.py
+./backend/plugins/registry/__init__.py
+./backend/plugins/sandbox/__init__.py
+./backend/research/__init__.py
+./backend/research/analysis/__init__.py
+./backend/research/citation/__init__.py
+./backend/research/datasets/__init__.py
+./backend/research/extraction/__init__.py
+./backend/research/papers/__init__.py
+./backend/research/reports/__init__.py
+./backend/research/search/__init__.py
+./backend/research/sources/__init__.py
+./backend/runtime/__init__.py
+./backend/runtime/locks/__init__.py
+./backend/runtime/queues/__init__.py
+./backend/runtime/state/__init__.py
+./backend/runtime/temp/__init__.py
+./backend/security/__init__.py
+./backend/security/audit/__init__.py
+./backend/security/authentication/__init__.py
+./backend/security/authorization/__init__.py
+./backend/security/defensive_security/__init__.py
+./backend/security/permissions/__init__.py
+./backend/security/policies/__init__.py
+./backend/security/rate_limit/__init__.py
+./backend/security/roles/__init__.py
+./backend/security/secrets/__init__.py
+./backend/security/verification/__init__.py
+./backend/security/verification/verifier.py
+./backend/sync/__init__.py
+./backend/sync/cloud/__init__.py
+./backend/sync/conflicts/__init__.py
+./backend/sync/devices/__init__.py
+./backend/sync/state/__init__.py
+./backend/tools/__init__.py
+./backend/tools/browser/__init__.py
+./backend/tools/computer/__init__.py
+./backend/tools/execution/__init__.py
+./backend/tools/files/__init__.py
+./backend/tools/network/__init__.py
+./backend/tools/processes/__init__.py
+./backend/tools/registry/__init__.py
+./backend/tools/shell/__init__.py
+./backend/tools/system/__init__.py
+./backend/tools/validation/__init__.py
+./data/cache/.gitkeep
+./data/exports/.gitkeep
+./data/local/.gitkeep
+./data/research/.gitkeep
+./docs/architecture/README.md
+./docs/decisions/0001-foundation.md
+./docs/security/README.md
+./frontend/__init__.py
+./frontend/animations/__init__.py
+./frontend/assets/__init__.py
+./frontend/chat/__init__.py
+./frontend/components/__init__.py
+./frontend/css/__init__.py
+./frontend/css/app.css
+./frontend/desktop/__init__.py
+./frontend/hud/__init__.py
+./frontend/index.html
+./frontend/js/__init__.py
+./frontend/js/app.js
+./frontend/layout/__init__.py
+./frontend/mobile/__init__.py
+./frontend/notifications/__init__.py
+./frontend/settings/__init__.py
+./frontend/three/__init__.py
+./frontend/visualization/__init__.py
+./frontend/voice/__init__.py
+./legacy/mark_liv/.gitkeep
+./pyproject.toml
+./requirements.txt
+./runtime/logs/.gitkeep
+./runtime/state/.gitkeep
+./runtime/temporary/.gitkeep
+./scripts/__init__.py
+./scripts/backup/__init__.py
+./scripts/development/__init__.py
+./scripts/development/run_backend.sh
+./scripts/maintenance/__init__.py
+./scripts/setup/__init__.py
+./scripts/testing/__init__.py
+./tests/__init__.py
+./tests/api/__init__.py
+./tests/api/test_health.py
+./tests/devices/__init__.py
+./tests/e2e/__init__.py
+./tests/fixtures/__init__.py
+./tests/integration/__init__.py
+./tests/mobile/__init__.py
+./tests/mocks/__init__.py
+./tests/performance/__init__.py
+./tests/regression/__init__.py
+./tests/security/__init__.py
+./tests/unit/__init__.py
+
+==================== FILE CONTENTS =========================
+
+############################################################
+FILE: ./COSMIC_PROJECT_STATE.md
+############################################################
+# COSMIC PROJECT STATE
+
+## Project
+COSMIC AI — Personal AI Operating System
+
+## Current Phase
+Foundation / Architecture Bootstrap
+
+## Primary Interface
+Android/mobile
+
+## Development Environment
+Acode + built-in terminal
+
+## Architecture Goal
+Device-independent backend/core with modular Android, PC, browser, research, coding, automation, security and hardware nodes.
+
+## Core Execution Pipeline
+Natural Language
+→ Intent + Context + Memory
+→ Planning
+→ AI/Capability Selection
+→ Permission + Authentication
+→ Execution
+→ Real Result
+→ Verification
+→ State/Memory Update
+→ Audit
+→ Verified Response
+
+## Security
+Only authorized defensive security, research, testing, CTF/lab and owned systems.
+
+## Important Rule
+COSMIC must never report an action as successful unless a real execution result has been obtained and verified.
+
+
+############################################################
+FILE: ./README.md
+############################################################
+# COSMIC AI
+
+COSMIC is a modular personal AI operating system designed as a device-independent AI core with mobile, computer, research, coding, automation, security, and future hardware interfaces.
+
+## Architecture
+
+User Interface → API → Kernel → Context/Memory/Identity → AI Gateway → Planner/Agents → Security/Permissions → Tools → Verification → State/Memory/Audit → Response
+
+## Core Principles
+
+- Real execution only; never simulate success.
+- Every important action is permission-aware and auditable.
+- Verification follows execution.
+- AI providers remain replaceable.
+- Android is a client/node, not the permanent brain.
+- Local-first architecture.
+- Cloud storage is optional backup/archive/synchronization.
+- Authorized defensive cybersecurity only.
+- Modular components with clear boundaries.
+
+
+############################################################
+FILE: ./backend/__init__.py
+############################################################
+"""COSMIC backend package."""
+
+
+############################################################
+FILE: ./backend/agents/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/agents/coding/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/agents/memory/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/agents/orchestration/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/agents/planning/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/agents/reasoning/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/agents/research/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/agents/security/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/agents/testing/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/ai/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/ai/gateway/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/ai/models/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/ai/prompts/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/ai/providers/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/ai/registry/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/ai/router/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/ai/streaming/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/api/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/api/dependencies/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/api/middleware/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/api/routes/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/api/schemas/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/api/websocket/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/app.py
+############################################################
+from flask import Flask, jsonify, request
+
+APP_NAME = "COSMIC AI"
+APP_VERSION = "0.1.0"
+
+app = Flask(__name__)
+
+
+@app.get("/")
+def root():
+    return jsonify({
+        "name": APP_NAME,
+        "version": APP_VERSION,
+        "status": "running"
+    })
+
+
+@app.get("/api/health")
+def health():
+    return jsonify({
+        "success": True,
+        "service": APP_NAME,
+        "status": "healthy"
+    })
+
+
+@app.post("/api/chat")
+def chat():
+    data = request.get_json(silent=True) or {}
+    message = str(data.get("message", "")).strip()
+
+    if not message:
+        return jsonify({
+            "success": False,
+            "error": "message is required"
+        }), 400
+
+    return jsonify({
+        "success": True,
+        "type": "response",
+        "message": message,
+        "verified": True
+    })
+
+
+if __name__ == "__main__":
+    app.run(host="127.0.0.1", port=8000, debug=False)
+
+
+############################################################
+FILE: ./backend/automation/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/automation/background/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/automation/events/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/automation/rules/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/automation/scheduler/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/automation/triggers/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/automation/workflows/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/backup/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/backup/integrity/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/backup/manifests/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/backup/restore/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/backup/snapshots/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/coding/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/coding/code_analysis/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/coding/debugging/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/coding/generation/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/coding/project_builder/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/coding/refactoring/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/coding/repository/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/coding/sandbox/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/coding/testing/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/config.py
+############################################################
+
+
+############################################################
+FILE: ./backend/config/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/config/environments/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/config/profiles/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/core/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/core/context/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/core/conversation/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/core/events/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/core/intelligence/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/core/intent/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/core/kernel/__init__.py
+############################################################
+from .kernel import CosmicKernel
+
+
+############################################################
+FILE: ./backend/core/kernel/kernel.py
+############################################################
+"""COSMIC central kernel boundary."""
+
+class CosmicKernel:
+    def __init__(self):
+        self.initialized = False
+
+    def initialize(self):
+        self.initialized = True
+
+    def status(self):
+        return {
+            "initialized": self.initialized
+        }
+
+
+############################################################
+FILE: ./backend/core/lifecycle/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/core/planning/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/core/state/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/database/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/database/connection.py
+############################################################
+"""Database connection boundary.
+
+The database implementation can evolve without changing higher-level COSMIC modules.
+"""
+
+from pathlib import Path
+import sqlite3
+
+DEFAULT_DB = Path("data/local/cosmic.db")
+
+
+def connect(path=DEFAULT_DB):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    return sqlite3.connect(path)
+
+
+############################################################
+FILE: ./backend/database/connection/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/database/migrations/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/database/models/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/database/repositories/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/database/seeds/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/devices/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/devices/android/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/devices/arduino/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/devices/esp32/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/devices/iot/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/devices/network/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/devices/pc/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/devices/protocols/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/devices/registry/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/identity/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/identity/history/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/identity/identity_history.py
+############################################################
+"""Identity change history."""
+
+class IdentityHistory:
+    def __init__(self):
+        self.entries = []
+
+    def record(self, old_name, new_name):
+        self.entries.append({
+            "old_name": old_name,
+            "new_name": new_name
+        })
+
+    def all(self):
+        return list(self.entries)
+
+
+############################################################
+FILE: ./backend/identity/identity_manager.py
+############################################################
+"""Persistent COSMIC identity management."""
+
+DEFAULT_IDENTITY = {
+    "name": "COSMIC",
+    "version": "0.1.0"
+}
+
+
+class IdentityManager:
+    def __init__(self, identity=None):
+        self.identity = dict(DEFAULT_IDENTITY)
+        if identity:
+            self.identity.update(identity)
+
+    def get_name(self):
+        return self.identity["name"]
+
+    def rename(self, new_name):
+        new_name = str(new_name).strip()
+        if not new_name:
+            raise ValueError("Identity name cannot be empty")
+        self.identity["name"] = new_name
+        return new_name
+
+
+############################################################
+FILE: ./backend/identity/preferences.py
+############################################################
+"""User preference abstraction."""
+
+class Preferences:
+    def __init__(self):
+        self._values = {}
+
+    def get(self, key, default=None):
+        return self._values.get(key, default)
+
+    def set(self, key, value):
+        self._values[key] = value
+
+
+############################################################
+FILE: ./backend/identity/preferences/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/identity/profiles/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/memory/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/memory/consolidation/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/memory/embeddings/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/memory/indexing/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/memory/long_term/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/memory/profiles/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/memory/retrieval/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/memory/short_term/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/memory/storage/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/observability/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/observability/diagnostics/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/observability/health/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/observability/logging/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/observability/metrics/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/observability/tracing/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/plugins/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/plugins/installed/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/plugins/loader/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/plugins/manifest/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/plugins/registry/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/plugins/sandbox/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/research/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/research/analysis/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/research/citation/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/research/datasets/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/research/extraction/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/research/papers/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/research/reports/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/research/search/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/research/sources/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/runtime/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/runtime/locks/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/runtime/queues/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/runtime/state/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/runtime/temp/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/security/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/security/audit/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/security/authentication/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/security/authorization/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/security/defensive_security/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/security/permissions/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/security/policies/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/security/rate_limit/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/security/roles/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/security/secrets/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/security/verification/__init__.py
+############################################################
+from .verifier import VerificationResult
+
+
+############################################################
+FILE: ./backend/security/verification/verifier.py
+############################################################
+"""Execution verification boundary."""
+
+class VerificationResult:
+    def __init__(self, verified, details=None):
+        self.verified = bool(verified)
+        self.details = details or {}
+
+    def to_dict(self):
+        return {
+            "verified": self.verified,
+            "details": self.details
+        }
+
+
+############################################################
+FILE: ./backend/sync/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/sync/cloud/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/sync/conflicts/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/sync/devices/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/sync/state/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/tools/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/tools/browser/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/tools/computer/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/tools/execution/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/tools/files/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/tools/network/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/tools/processes/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/tools/registry/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/tools/shell/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/tools/system/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./backend/tools/validation/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./docs/architecture/README.md
+############################################################
+# COSMIC Architecture
+
+The architecture is divided into independent layers:
+
+1. Interface
+2. API
+3. Core Kernel
+4. Context and Conversation
+5. AI Gateway
+6. Memory and Identity
+7. Security and Permissions
+8. Tools and Execution
+9. Research/Coding/Agents
+10. Devices and Automation
+11. Database/Sync/Backup
+12. Verification and Audit
+
+
+############################################################
+FILE: ./docs/decisions/0001-foundation.md
+############################################################
+# ADR-0001: Modular Foundation
+
+COSMIC uses a modular backend so AI providers, interfaces, devices, tools, memory systems and execution engines can evolve independently.
+
+The Android client is treated as a node rather than the permanent location of the COSMIC intelligence core.
+
+
+############################################################
+FILE: ./docs/security/README.md
+############################################################
+# COSMIC Security
+
+Security is a first-class subsystem.
+
+All computer, network, browser, device and security actions must be:
+
+- authorized
+- permission checked
+- auditable
+- executed against an allowed target
+- verified after execution
+
+Cybersecurity functionality is limited to authorized defensive, testing, research, CTF and laboratory environments.
+
+
+############################################################
+FILE: ./frontend/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./frontend/animations/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./frontend/assets/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./frontend/chat/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./frontend/components/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./frontend/css/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./frontend/css/app.css
+############################################################
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #050814;
+    color: #e8f0ff;
+    font-family: system-ui, sans-serif;
+}
+
+.cosmic-shell {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.core {
+    font-size: clamp(2rem, 12vw, 6rem);
+    font-weight: 800;
+    letter-spacing: .25em;
+}
+
+#status {
+    margin-top: 1rem;
+    opacity: .7;
+}
+
+
+############################################################
+FILE: ./frontend/desktop/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./frontend/hud/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./frontend/index.html
+############################################################
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050814">
+    <title>COSMIC AI</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <main id="app">
+        <section class="cosmic-shell">
+            <div class="core">COSMIC</div>
+            <div id="status">SYSTEM INITIALIZING</div>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
+
+############################################################
+FILE: ./frontend/js/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./frontend/js/app.js
+############################################################
+async function checkCOSMIC() {
+    const status = document.getElementById("status");
+
+    try {
+        const response = await fetch("/api/health");
+        const data = await response.json();
+
+        status.textContent = data.success
+            ? "SYSTEM ONLINE"
+            : "SYSTEM ERROR";
+    } catch {
+        status.textContent = "BACKEND OFFLINE";
+    }
+}
+
+checkCOSMIC();
+
+
+############################################################
+FILE: ./frontend/layout/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./frontend/mobile/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./frontend/notifications/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./frontend/settings/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./frontend/three/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./frontend/visualization/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./frontend/voice/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./pyproject.toml
+############################################################
+
+
+############################################################
+FILE: ./requirements.txt
+############################################################
+Flask>=3.1,<4
+python-dotenv>=1.0,<2
+
+
+############################################################
+FILE: ./scripts/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./scripts/backup/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./scripts/development/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./scripts/maintenance/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./scripts/setup/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./scripts/testing/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./tests/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./tests/api/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./tests/api/test_health.py
+############################################################
+def test_health_contract():
+    from backend.app import app
+
+    client = app.test_client()
+    response = client.get("/api/health")
+
+    assert response.status_code == 200
+    data = response.get_json()
+    assert data["success"] is True
+    assert data["status"] == "healthy"
+
+
+############################################################
+FILE: ./tests/devices/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./tests/e2e/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./tests/fixtures/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./tests/integration/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./tests/mobile/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./tests/mocks/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./tests/performance/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./tests/regression/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./tests/security/__init__.py
+############################################################
+
+
+############################################################
+FILE: ./tests/unit/__init__.py
+############################################################
+
+
+==================== GIT INFORMATION =======================
+
+==================== ENVIRONMENT ===========================
+Python: unavailable
+Node: unavailable
+NPM: unavailable
+============================================================

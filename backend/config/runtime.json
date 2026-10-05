@@ -1,0 +1,24 @@
+{
+  "project": "COSMIC AI",
+  "architecture": "local-first",
+  "primary_provider": "gemini",
+  "memory": "persistent",
+  "automatic_memory_deletion": false,
+  "future_providers": [
+    "groq",
+    "mistral",
+    "openrouter",
+    "replicate"
+  ],
+  "capabilities": [
+    "chat",
+    "memory",
+    "research",
+    "coding",
+    "automation",
+    "tools",
+    "verification",
+    "multimodal",
+    "device_control"
+  ]
+}
