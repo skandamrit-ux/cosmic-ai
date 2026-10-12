@@ -1,60 +1,63 @@
 name: Build COSMIC Android APK
 
 'on':
-  workflow_dispatch:
-  push:
-    branches:
-      - main
+workflow_dispatch:
+push:
+branches:
+- main
 
 permissions:
-  contents: read
+contents: read
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout COSMIC
-        uses: actions/checkout@v4
+build:
+runs-on: ubuntu-latest
+steps:
+- name: Checkout COSMIC
+uses: actions/checkout@v4
 
-      - name: Set up Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: '21'
+  - name: Set up Java
+    uses: actions/setup-java@v4
+    with:
+      distribution: temurin
+      java-version: '21'
 
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-          cache: npm
-          cache-dependency-path: android-wrapper/package-lock.json
+  - name: Set up Node.js
+    uses: actions/setup-node@v4
+    with:
+      node-version: '22'
+      cache: npm
+      cache-dependency-path: android-wrapper/package-lock.json
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+  - name: Set up Android SDK
+    uses: android-actions/setup-android@v3
 
-      - name: Install Capacitor dependencies
-        working-directory: android-wrapper
-        run: npm ci
+  - name: Accept Android SDK licenses
+    run: yes | sdkmanager --licenses
 
-      - name: Copy latest COSMIC frontend
-        run: |
-          mkdir -p android-wrapper/www
-          cp -a frontend/. android-wrapper/www/
+  - name: Install Capacitor dependencies
+    working-directory: android-wrapper
+    run: npm ci
 
-      - name: Sync Android project
-        working-directory: android-wrapper
-        run: npx cap sync android
+  - name: Copy latest COSMIC frontend
+    run: |
+      mkdir -p android-wrapper/www
+      cp -a frontend/. android-wrapper/www/
 
-      - name: Build APK
-        working-directory: android-wrapper/android
-        run: |
-          chmod +x gradlew
-          ./gradlew assembleDebug
+  - name: Sync Capacitor Android project
+    working-directory: android-wrapper
+    run: npx cap sync android
 
-      - name: Save APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: COSMIC-Android-APK
-          path: android-wrapper/android/app/build/outputs/apk/debug/app-debug.apk
-          if-no-files-found: error
-          retention-days: 14
+  - name: Build COSMIC APK
+    working-directory: android-wrapper/android
+    run: |
+      chmod +x gradlew
+      ./gradlew assembleDebug --stacktrace
+
+  - name: Upload COSMIC APK
+    uses: actions/upload-artifact@v4
+    with:
+      name: COSMIC-Android-APK
+      path: android-wrapper/android/app/build/outputs/apk/debug/app-debug.apk
+      if-no-files-found: error
+      retention-days: 14
