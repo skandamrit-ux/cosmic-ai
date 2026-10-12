@@ -1,9 +1,10 @@
 name: Build COSMIC Android APK
 
-on:
+'on':
 workflow_dispatch:
 push:
-branches: [main]
+branches:
+- main
 
 permissions:
 contents: read
